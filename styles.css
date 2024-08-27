@@ -167,7 +167,7 @@ body {
 }
 
 .github-info img.github-logo {
-    width: 30px; /* Set the width of the logo */
+    width: 50px; /* Set the width of the logo */
     height: auto; /* Maintain aspect ratio */
     margin-right: 0.5rem; /* Space between the logo and text */
 }
