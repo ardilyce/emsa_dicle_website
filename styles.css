@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #253265; /* Set text color to main color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    background: #253265; /* Header color */
+    padding: 5rem; /* Increased padding for more logo area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.logo {
+    max-width: 700px; /* Further increased logo size */
+    margin-right: 2rem; /* Margin to separate from search bar */
+}
+
+.search-bar {
+    padding: 0.75rem 1rem; /* Padding for a larger feel */
+    font-size: 1.2rem; /* Font size */
+    border: 2px solid #8A4B2C; /* Darker orange border (one tone darker) */
+    border-radius: 50px; /* Rounded edges */
+    width: 450px; /* Width of search bar */
+    background-color: #fff; /* White background */
+    color: #253265; /* Main color for text in search bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.search-bar::placeholder {
+    color: #A65E2E; /* Placeholder text color in dark orange */
+    opacity: 0.7;
+}
+
+.search-bar:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slight glow on focus */
+    border-color: #8A4B2C; /* Darker orange border on focus */
+}
+
+.search-bar:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.company-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 0.5rem; /* Reduced gap to bring boxes closer */
+    justify-content: center; /* Center the company boxes */
+    padding: 2rem;
+    max-width: 1200px; /* Constrain width for better centering */
+    width: 100%;
+}
+
+.company-box {
+    display: flex;
+    align-items: center;
+    background: #253265; /* Changed background color to main color */
+    padding: 1.5rem; /* Increased padding for larger boxes */
+    margin: 0.25rem;
+    border-radius: 10px; /* Border-radius */
+    width: 95%; /* Larger width for boxes */
+    max-width: 500px; /* Increased maximum width for boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #6DA1B2; /* Darker border (one tone darker than background) */
+}
+
+.company-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.company-image {
+    flex: 1; /* Flex for equal area */
+    max-width: 120px; /* Larger image size */
+    margin-right: 1rem;
+    border-radius: 10px;
+    border: 2px solid #8A4B2C; /* Darker orange border around images */
+}
+
+.company-info {
+    flex: 2; /* Flex for more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-info h2 {
+    margin-bottom: 0.5rem;
+    color: #A65E2E; /* Set header color to dark orange */
+    font-size: 1.3rem; /* Larger font size */
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Smaller gap */
+}
+
+.info-box {
+    background: #1E2A4D; /* Darker background color for the info box */
+    padding: 0.75rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6DA1B2; /* Darker border for info box */
+}
+
+.info-box h3 {
+    margin-bottom: 0.3rem;
+    color: #A65E2E; /* Set sub-header color to dark orange */
+    font-size: 1rem;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #A65E2E; /* Set paragraph text color to dark orange */
+}
+
+.location-discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #A65E2E; /* Changed location color to dark orange */
+}
+
+.discount {
+    font-size: 0.9rem;
+    color: #A65E2E; /* Changed discount color to dark orange */
+}
+
+.github-info {
+    font-size: 0.8rem; /* Smaller font size */
+    color: #253265; /* Set GitHub info text color to main color */
+    margin-top: 1rem; /* Margin to separate from the main footer text */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center items vertically */
+}
+
+.github-info a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #253265; /* Set link color to main color */
+    display: flex; /* Flex for image and text alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.github-info img.github-logo {
+    width: 20px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0.5rem; /* Space between the logo and text */
+}
+
+footer {
+    background: #253265; /* Main color */
+    color: #A65E2E; /* Set footer text color to dark orange */
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+footer p {
+    color: #A65E2E; /* Set footer text color to dark orange */
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center; /* Center items in column layout */
+    }
+
+    .logo {
+        max-width: 500px; /* Adjusted logo size for smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .search-bar {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .company-box {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: none; /* Remove max-width on smaller screens */
+    }
+
+    .company-image {
+        margin-bottom: 1rem;
+        max-width: 150px; /* Adjust image size for smaller screens */
+    }
+
+    .location-discount {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
