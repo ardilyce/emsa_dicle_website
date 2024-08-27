@@ -152,7 +152,7 @@ body {
 
 .github-info {
     font-size: 0.8rem; /* Smaller font size */
-    color: #253265; /* Set GitHub info text color to main color */
+    color: #A65E2E; /* Set GitHub info text color to main color */
     margin-top: 1rem; /* Margin to separate from the main footer text */
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the content */
@@ -161,13 +161,13 @@ body {
 
 .github-info a {
     text-decoration: none; /* Remove underline from the link */
-    color: #253265; /* Set link color to main color */
+    color: #A65E2E; /* Set link color to main color */
     display: flex; /* Flex for image and text alignment */
     align-items: center; /* Center items vertically */
 }
 
 .github-info img.github-logo {
-    width: 20px; /* Set the width of the logo */
+    width: 30px; /* Set the width of the logo */
     height: auto; /* Maintain aspect ratio */
     margin-right: 0.5rem; /* Space between the logo and text */
 }
