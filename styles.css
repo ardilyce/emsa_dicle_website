@@ -188,48 +188,53 @@ footer p {
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        align-items: center; /* Center items in column layout */
+        align-items: center;
     }
 
     .logo {
-        max-width: 150px; /* Adjusted logo size for smaller screens */
+        max-width: 120px; /* Further reduced logo size */
         margin-bottom: 1rem;
     }
 
     .search-bar {
-        width: 100%; /* Full width on smaller screens */
-        font-size: 1rem; /* Slightly smaller font size */
-        padding: 0.5rem 0.75rem; /* Reduced padding */
+        width: 100%;
+        font-size: 0.9rem; /* Smaller font size */
+        padding: 0.4rem 0.6rem; /* Reduced padding */
     }
 
     .company-list {
-        grid-template-columns: repeat(1, 1fr); /* One column for smaller screens */
-        gap: 0.5rem; /* Maintain smaller gap */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.3rem; /* Reduced gap between boxes */
     }
 
     .company-box {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Keep elements side by side */
+        align-items: center; /* Vertically center the content */
         width: 100%;
-        max-width: none; /* Remove max-width on smaller screens */
-        padding: 1rem; /* Reduced padding */
+        max-width: none;
+        padding: 0.75rem; /* Further reduced padding */
+        margin: 0.2rem; /* Smaller margin */
     }
 
     .company-image {
-        margin-bottom: 0.5rem;
-        max-width: 100px; /* Reduced image size */
+        margin-right: 0.5rem;
+        max-width: 80px; /* Reduced image size */
     }
 
     .company-info h2 {
-        font-size: 1.1rem; /* Reduced font size */
+        font-size: 1rem; /* Smaller font size */
+        margin-bottom: 0.25rem;
     }
 
     .company-info p, .location, .discount {
-        font-size: 0.8rem; /* Smaller text for better fit */
+        font-size: 0.75rem; /* Reduced text size */
     }
 
     .location-discount {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem; /* Reduced gap between location and discount */
     }
 }
+
