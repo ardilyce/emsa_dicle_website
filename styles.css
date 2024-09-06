@@ -142,7 +142,17 @@ body {
 
 .location {
     font-size: 0.9rem;
-    color: #A65E2E; /* Changed location color to dark orange */
+    color: #fff; /* Changed location color to white */
+}
+
+.location a {
+    color: #fff; /* Set link color to white */
+    text-decoration: underline; /* Keep the underline */
+}
+
+.location a:hover {
+    color: #fff; /* Keep the hover color white */
+    text-decoration: underline; /* Keep underline on hover */
 }
 
 .discount {
